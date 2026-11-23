@@ -1,0 +1,26 @@
+[
+    {
+        "id": "mqtt_publish_kontrol",
+        "type": "mqtt out",
+        "z": "f3e155a9aba8c324",
+        "name": "Publish Kontrol",
+        "topic": "",
+        "qos": "0",
+        "retain": "false",
+        "broker": "mqtt_broker_config",
+        "x": 670,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "mqtt_broker_config",
+        "type": "mqtt-broker",
+        "name": "Local Mosquitto",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "node-red-backend",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4"
+    }
+]
